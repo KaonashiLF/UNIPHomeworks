@@ -1,5 +1,6 @@
 import time
 
+
 class Eletronicos:
     def __init__(self, marca, modelo, cor, tamanho, usuario, senha):
         self.marca = marca
@@ -41,18 +42,6 @@ class Eletronicos:
     def setPower(self, ligado):
         self.ligado
 
-# ------------- Funções de credencial -----------------
-    def entrarComDigital(self, dedo):
-        # Usuário faz o login com a digital inputando o dedo
-        self.digital = dedo
-        pass
-
-    def entrarComCredenciais(self, usuario, senha):
-        # Usuário loga com login e senha
-        self.usuario = usuario
-        self.senha = senha
-        pass
-
 
 # -------------- Funções do A B A L O ------------------
     def Ligar(self):
@@ -74,7 +63,7 @@ class Eletronicos:
         if self.power == True:
             power = 'Power On!'
         else:
-            power = '=('
+            power = 'Power Off =('
 
         spec = f'''Especificações do seu eletrônico
         -------------------------------------
@@ -85,37 +74,3 @@ class Eletronicos:
         {power}
         '''
         print(spec)
-
-    def jogarJogoDaCobrinha(self):
-        # Finge que abriu o joguinho
-        for j in 'Jogo da cobrinha':
-            print(j)
-            time.sleep(0.5)
-
-    def navegarNaInternet(self):
-        # Você está agora acessando a interwebs
-        print('Acessando a interwebs...')
-        pass
-
-    def medirBPM(self):
-        # Bota no pulso e vai
-        print('Relógio no pulso and go')
-        time.sleep(2)
-
-        t = 1
-        for r in range(0,60):
-            print(t)
-            t = t+1
-            time.sleep(1)
-
-    def definirTipoDeTreino(self):
-        # Esse só serve para o relógio
-        pass
-
-    def marcarTempoDeTreino(self):
-        # Bota no pulso e vai treinar
-        pass
-
-    def desenharComCaneta(self):
-        # serve pro tablet
-        pass

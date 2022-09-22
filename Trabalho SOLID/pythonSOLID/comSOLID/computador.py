@@ -55,3 +55,9 @@ class desktop(eletronico.Eletronicos):
         for r in 'Viciado':
             print(r)
             time.sleep(1)
+
+    # 
+    def navegarNoChrome(self):
+        # Você está agora acessando a interwebs
+        print('Acessando a interwebs...')
+        pass
